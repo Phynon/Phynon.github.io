@@ -1,79 +1,360 @@
 <!DOCTYPE html>
-<html lang=en>
-
+<html lang="en">
 <head>
-    <meta charset=utf-8>
-    <meta http-equiv=X-UA-Compatible content="IE=edge">
-    <meta name=viewport content="width=device-width,initial-scale=1">
-    <!--[if IE]><link rel="icon" href="/favicon.ico"><![endif]-->
-    <title>loading</title>
-    <link rel=prefetch href=https://unpkg.com/jquery@3.3.1/dist/jquery.min.js as=script>
-    <script src=https://unpkg.com/jquery@3.3.1/dist/jquery.min.js></script>
-    <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css>
-    <script src=https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js></script>
-    <link href=/blog/css/articles.2c079b61.css rel=prefetch>
-    <link href=/blog/css/articles~home~pages.1c122207.css rel=prefetch>
-    <link href=/blog/css/gitalk.b6623aae.css rel=prefetch>
-    <link href=/blog/css/gitment.7f9b3023.css rel=prefetch>
-    <link href=/blog/css/pages.2c079b61.css rel=prefetch>
-    <link href=/blog/css/tagcloud.4509716a.css rel=prefetch>
-    <link href=/blog/js/archives.056611fe.js rel=prefetch>
-    <link href=/blog/js/articles.b0172c4b.js rel=prefetch>
-    <link href=/blog/js/articles~home~pages.93d92545.js rel=prefetch>
-    <link href=/blog/js/comment.4e874b4c.js rel=prefetch>
-    <link href=/blog/js/dplayer.059be256.js rel=prefetch>
-    <link href=/blog/js/gitalk.09835498.js rel=prefetch>
-    <link href=/blog/js/gitment.5a54c974.js rel=prefetch>
-    <link href=/blog/js/home.2482dec2.js rel=prefetch>
-    <link href=/blog/js/leancloud-storage.d4827b27.js rel=prefetch>
-    <link href=/blog/js/pages.5822fb57.js rel=prefetch>
-    <link href=/blog/js/related.c8de4528.js rel=prefetch>
-    <link href=/blog/js/tagcloud.8278d636.js rel=prefetch>
-    <link href=/blog/js/valine.bdadea88.js rel=prefetch>
-    <link href=/blog/css/app.3a12edab.css rel=preload as=style>
-    <link href=/blog/css/chunk-bootstrap-vue.1e1874e4.css rel=preload as=style>
-    <link href=/blog/css/chunk-bootstrap.6c57f554.css rel=preload as=style>
-    <link href=/blog/js/app.dd86e4d0.js rel=preload as=script>
-    <link href=/blog/js/chunk-bootstrap-vue.c86bbd7c.js rel=preload as=script>
-    <link href=/blog/js/chunk-bootstrap.3bd85c7e.js rel=preload as=script>
-    <link href=/blog/js/chunk-font-awesome.8d2cd1c1.js rel=preload as=script>
-    <link href=/blog/js/chunk-markdown-it.61e60a46.js rel=preload as=script>
-    <link href=/blog/js/chunk-vue.3748bb0e.js rel=preload as=script>
-    <link href=/blog/css/chunk-bootstrap-vue.1e1874e4.css rel=stylesheet>
-    <link href=/blog/css/chunk-bootstrap.6c57f554.css rel=stylesheet>
-    <link href=/blog/css/app.3a12edab.css rel=stylesheet>
-    <link rel=icon type=image/png sizes=32x32 href=/blog/img/icons/favicon-32x32.png>
-    <link rel=icon type=image/png sizes=16x16 href=/blog/img/icons/favicon-16x16.png>
-    <link rel=manifest href=/blog/manifest.json>
-    <meta name=theme-color content=#ffffff>
-    <meta name=apple-mobile-web-app-capable content=no>
-    <meta name=apple-mobile-web-app-status-bar-style content=default>
-    <meta name=apple-mobile-web-app-title content=hexo-theme-amber>
-    <link rel=apple-touch-icon href=/blog/img/icons/apple-touch-icon-152x152.png>
-    <link rel=mask-icon href=/blog/img/icons/safari-pinned-tab.svg color=#ffffff>
-    <meta name=msapplication-TileImage content=/blog/img/icons/msapplication-icon-144x144.png>
-    <meta name=msapplication-TileColor content=#ffffff>
-<meta name="generator" content="Hexo 4.2.1"></head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-<body><noscript>
-        <link rel=stylesheet href=https://unpkg.com/bootstrap@4.1.3/dist/css/bootstrap.min.css>
-        <div class=container style="position: relative;">
-            <div class=text-center style="position: relative; margin: 0 auto; top: 50vh; transform: translateY(-65%);">
-                <h1 style="font-size: 12.5rem; font-weight:lighter;">JS</h1>
-                <h4 style="font-weight: normal; color: #6c757d;">We're sorry but this site requires <strong
-                        style="color: #007bff;">JavaScript</strong> to function normally.</h4>
-            </div>
-        </div>
-    </noscript>
-    <div id=app>
-        <script>document.write('<img src="\/blog\/img\/loading.gif" width="64" height="64" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">');</script>
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="stylesheet" href="lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"39.107.136.213/blog","root":"/blog/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Stack">
+<meta property="og:url" content="archives/index.html">
+<meta property="og:site_name" content="Stack">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="Phynon">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="archives/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : false,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Archive | Stack</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-    <script src=/blog/js/chunk-bootstrap-vue.c86bbd7c.js></script>
-    <script src=/blog/js/chunk-markdown-it.61e60a46.js></script>
-    <script src=/blog/js/chunk-font-awesome.8d2cd1c1.js></script>
-    <script src=/blog/js/chunk-bootstrap.3bd85c7e.js></script>
-    <script src=/blog/js/chunk-vue.3748bb0e.js></script>
-    <script src=/blog/js/app.dd86e4d0.js></script>
-</body>
+  </div>
 
+  <div class="site-meta">
+
+    <a href="/blog/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Stack</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content archive">
+            
+
+  
+  
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
+      </div>
+
+      
+    <div class="collection-year">
+      <span class="collection-header">2020</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-07-09T21:04:16+08:00"
+              content="2020-07-09">
+          07-09
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="2020/07/09/what-year/" itemprop="url">
+            <span itemprop="name">title</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-07-06T21:06:21+08:00"
+              content="2020-07-06">
+          07-06
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="2020/07/06/音乐合成/" itemprop="url">
+            <span itemprop="name">音乐合成</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Phynon</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Phynon</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="lib/anime.min.js"></script>
+  <script src="lib/velocity/velocity.min.js"></script>
+  <script src="lib/velocity/velocity.ui.min.js"></script>
+
+<script src="js/utils.js"></script>
+
+<script src="js/motion.js"></script>
+
+
+<script src="js/schemes/muse.js"></script>
+
+
+<script src="js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
 </html>
